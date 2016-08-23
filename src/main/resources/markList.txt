@@ -1,0 +1,5 @@
+Maths,72%
+Science,83%
+Social Studies,80%
+English,85%
+Computer Science,87%

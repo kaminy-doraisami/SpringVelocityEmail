@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Exam Results</title>
+</head>
+<body style="background-color: powderblue;">
+	<h2 style="color: blue;">Your exam results are here!</h2>
+	<br>
+	<b> This term you were tested on $markList.size() subject(s) and
+		below is your score</b>
+	<br>
+	<br> #set($count = 1)
+	<table>
+		#foreach($row in $markList)
+		<tr>
+			<td>$count.</td>
+			<td>$row.subject</td>
+			<td>$row.score</td>
+		</tr>
+		#set($count = $count + 1) #end
+	</table>
+	<br>
+	<em> All the best for next term! </em>
+</body>
+</html>
